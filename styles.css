@@ -101,6 +101,61 @@ a {
 
 .nav-menu.active {
   left: 0;
+  z-index: 5;
 } 
 
+}
+
+.hero {
+  position:absolute;
+  background-color: #fff;
+  background-image: url("./images/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 6rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+}
+
+.wrapper {
+  width: 80%;
+  margin: 7rem auto 0; 
+  padding-bottom: 7rem;
+
+}
+.wrapper h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+  color: #172B4D;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.wrapper p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #344563;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+.wrapper h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #7F8CFF;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+.wrapper ul {
+  display: flex;
+  gap: 1rem;
+}
+.wrapper ul li i {
+  color: #505F79;
+  font-size: 1.5rem;
 }
