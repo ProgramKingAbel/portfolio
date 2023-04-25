@@ -5,7 +5,9 @@
   border: 0;
   box-sizing: border-box;
 }
-
+body {
+  background: #E5E5E5;
+}
 header {
   background-color: #fff;
   width: 100%;
@@ -158,4 +160,114 @@ a {
 .wrapper ul li i {
   color: #505F79;
   font-size: 1.5rem;
+}
+
+/* WORKS SECTION STYLING */
+.works {
+  position: relative;
+  width: 100%;
+  margin: 43rem auto;
+}
+
+.all-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background: #fff;
+  border: 0.5px solid rgb(231, 231, 231);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-details .title {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #172B4D;
+}
+
+.developer-details {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0;
+
+}
+.developer-details span {
+  width: 0.5rem;
+  aspect-ratio: 1;
+  background-color: #C1C7D0;;
+  border-radius: 50%;
+}
+
+.developer-details > li:nth-child(1) {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #344563;
+}
+.developer-details li {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #7A869A;
+}
+.card-details p {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #344563;
+  margin-bottom: 1rem;
+}
+
+.card-details .stack {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5 0;
+}
+.card-details .stack li {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #6070ff;
+  background: #EBEBFF;
+  border-radius: 8px;
+  padding: 4px 12px;
+
+}
+
+.card a {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 0.2rem;
+  background: #FFFFFF;
+  border: 1px solid #396DF2;
+  border-radius: 0.3rem;
+  width: 9rem;
+  color: #396DF2;
+  text-align: center;
+
 }
