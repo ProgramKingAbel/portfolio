@@ -125,7 +125,7 @@ a {
   padding-bottom: 7rem;
 
 }
-.wrapper h1 {
+.wrapper h1 , .about-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -135,7 +135,7 @@ a {
   padding-bottom: 0.25rem;
 }
 
-.wrapper p {
+.wrapper p, .about-par {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
@@ -144,7 +144,7 @@ a {
   margin-bottom: 0.5rem;
   padding-bottom: 0.25rem;
 }
-.wrapper h2 {
+.wrapper h2, .about-header2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -153,11 +153,12 @@ a {
   margin-bottom: 0.5rem;
   padding-bottom: 0.25rem;
 }
-.wrapper ul {
+.wrapper ul, .about-ul {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
-.wrapper ul li i {
+.wrapper ul li i, .about-ul li i {
   color: #505F79;
   font-size: 1.5rem;
 }
@@ -166,7 +167,7 @@ a {
 .works {
   position: relative;
   width: 100%;
-  margin: 43rem auto;
+  margin: 43rem 0 auto;
 }
 
 .all-projects {
@@ -270,4 +271,87 @@ a {
   color: #396DF2;
   text-align: center;
 
+}
+
+/* ABOUT SECTION STYLING */
+.about {
+  background: #fff;
+  padding-top: 1rem;
+  margin-top: 5rem;
+  border-top-left-radius: 4rem;
+  padding-bottom: 7rem;
+}
+
+.about-wrapper {
+  width: 80%;
+  margin: 5rem auto; 
+   
+}
+.general-details a.btn {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 0.2rem;
+  background: #FFFFFF;
+  border: 1px solid #396DF2;
+  border-radius: 0.3rem;
+  width: 20rem;
+  margin-top: 10rem;
+  color: #396DF2;
+  text-align: center;
+}
+
+.general-details .about-ul {
+  margin-bottom: 1rem;
+}
+
+.skillset {
+  margin-top: 2rem;
+}
+
+.skillset-type {
+  margin-bottom: 2rem;
+   
+  }
+
+.skillset-type i {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+float: right;
+  
+}
+.skillset hr {
+  border: 1px solid #DFE1E6;
+  width: 100%;
+  margin: 2rem auto;
+  
+
+  
+}
+.skillset-type h3 {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #000;
+  float: left;
+  clear: both;
+  
+}
+
+.skillset-type .language-detail {
+clear: both;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 1rem;
+padding: 0.5rem;
+background: #F7F7F9;
+border-radius: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.language-detail h4 {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #253858;
 }
