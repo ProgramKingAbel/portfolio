@@ -491,7 +491,11 @@ button[type="submit"] {
       }
 
       .contact-wrapper form {
-        max-width: 30rem;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
             
       .contact-text {
@@ -501,6 +505,10 @@ button[type="submit"] {
       .contact {
         background-image: url('./images/ctback.png');
       }
+
+      
+
+
 
 
   }
