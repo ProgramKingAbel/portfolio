@@ -360,9 +360,6 @@ a {
   color: #fff;
 }
 
-
-
-
 /* ABOUT SECTION STYLING */
 .about {
   background: #fff;
@@ -550,7 +547,6 @@ button[type="submit"] {
   pointer-events: all;
   opacity: 1;
 }
-
 
 /* Media query for desktop */
 
