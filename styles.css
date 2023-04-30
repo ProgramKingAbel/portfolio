@@ -541,6 +541,7 @@ button[type="submit"] {
   inset: 0 0 0 0;
   background-color: #c1c7d0;
   mix-blend-mode: multiply;
+  backdrop-filter: blur(6px);
   pointer-events: none;
 }
 
