@@ -150,18 +150,17 @@ worksData.forEach((element, i) => {
   projectsContainer.append(card);
 });
 
-
 const projectsContainer = document.querySelector('.all-projects');
 
 projectsContainer.addEventListener('click', (e) => {
   if (e.target.classList.contains('open-modal')) {
     const displayed = document.querySelector('.modal-wrapper');
+    const overlay = document.getElementById('overlay');
     displayed.classList.add('active');
     overlay.classList.add('active');
     let { id } = e.target;
     id = parseInt(id, 10);
 
-    // search for data in array
     const getItem = worksData.find((i) => i.id === id);
     const modalContainer = document.querySelector('.modal-wrapper');
     const modalCard = document.createElement('div');
@@ -198,37 +197,11 @@ projectsContainer.addEventListener('click', (e) => {
     modalContainer.append(modalCard);
 
     modalCard.addEventListener('click', (e) => {
-      if (e.target.id == 'close-btn') {
+      if (e.target.id === 'close-btn') {
         modalCard.remove();
         displayed.classList.remove('active');
         overlay.classList.remove('active');
       }
     });
-
   }
- 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

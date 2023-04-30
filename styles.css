@@ -66,7 +66,7 @@ a {
 @media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
-   z-index: 10;
+    z-index: 10;
   }
 
   .bar {
@@ -248,7 +248,6 @@ a {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-
 }
 
 .card-image img,
@@ -324,7 +323,6 @@ a {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-
 
 .modal-buttons {
   display: flex;
