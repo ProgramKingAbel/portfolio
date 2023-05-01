@@ -19,9 +19,9 @@
         <nav class="navbar">
             <a class="logo" href="#">Abel</a>
             <ul class="nav-menu">
-                <li><a class="nav-link" href="#">Portfolio</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -61,7 +61,129 @@
             </section>
     </main>
     <!-- PORTFOLIO SECTION -->
+    <section class="works" id="portfolio">
+    <div class="all-projects">
 
+       <!--------------------------- ALL PROJECTS SECTION GENERATED DYNAMICALLY WITH JS -------------------->
+
+    </div>
+    </section>
+
+    <section class="modal">
+
+        <div class="modal-wrapper" id="modal-wrapper">
+        </div>
+
+        <div id="overlay"></div>
+
+    </section>
+
+
+
+    <section class="about" id="about">
+    <div class="about-wrapper">
+        <div class="general-details">
+            <h1 class="about-heading">About Myself</h1>
+            <p class="about-par">Hello I’m a software developer! I can help you build a product , 
+                feature or website. Look through some of my work and experience!
+                 If you like what you see and have a project you need coded,
+                 don’t hesitate to contact me.</p>
+            <h2 class="about-header2">LET'S CONNECT</h2>
+
+            <ul class="about-ul">
+                <li>
+                  <a title="linked in profile" href="https://www.linkedin.com/in/abelmatundamorara-451340250/"><i class="uil uil-linkedin"></i></a>
+                </li>
+                <li>
+                  <a title="twitter profile" href="https://twitter.com/CEOAbel1"><i class="uil uil-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://venture.angellist.com/"><img src="./images/Chill-icon.svg" alt="chill social-media icon"/></a> 
+                </li>
+                <li>
+                  <a title="Medium profile" href="https://medium.com/@abelmorara254"><i class="uil uil-medium-m"></i></a>
+                </li>
+                <li>
+                  <a title="Github profile" href="https://github.com/ProgramKingAbel"><i class="uil uil-github"></i></a>
+                </li>
+              </ul>
+              
+              <a class="btn" href="#">Get my resume</a>
+            </div>
+
+            <div class="skillset">
+
+                <div class="skillset-type">
+                    <div class="lang-head">
+                    <h3>Languages</h3>
+                    <i class="uil uil-angle-down"></i>
+
+                   </div>
+
+                   <div class="skillset-lang">
+
+                    <div class="language-detail">
+                        <img src="./images/Ellipse 1.svg" alt="Javascript Icon Logo">
+                        <h4>Javascript</h4>
+                    </div>
+
+                    <div class="language-detail">
+                        <img src="./images/HTML.svg" alt="HTML Icon Logo">
+                        <h4>HTML</h4>
+                    </div>
+
+                    <div class="language-detail">
+                        <img src="./images/CSS.svg" alt="CSS Icon Logo">
+                        <h4>CSS</h4>
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div class="skillset-type">
+                    <h3>Frameworks</h3>
+                    <i class="uil uil-angle-right-b"></i>
+                    
+                </div>
+
+                <hr />
+
+                <div class="skillset-type">
+                    <h3>Skills</h3>
+                    <i class="uil uil-angle-right-b"></i>
+                    
+                </div>
+                <hr />
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-wrapper">
+            <h1 class="contact-header">Contact me</h1>
+            <p class="contact-text">If you have an application you are interested in developing,
+                 a feature that you need built or a project that needs coding.
+                 I’d love to help with it!
+                </p>
+                    <form action="https://formspree.io/f/xrgvrjrp" method="POST" id="register">
+                        
+                          <label for="name">Full name</label>
+                          <input type="text" name="name" id="name" placeholder="John Doe" required maxlength="30"/>
+                          <small></small>
+                          <label for="email">Email address</label>
+                          <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required/>
+                          <small></small>
+                          <label for="message">Write your message:</label>
+                          <textarea name="message" id="message" placeholder="Write Your Message..." required maxlength="500"></textarea>
+                          <small></small>                       
+                          <button type="submit" id="submit-btn">Get in touch</button>
+                       
+                       </form>
+        </div>
+    </section>
  <script src="script.js"></script>       
 </body>
 </html>
