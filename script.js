@@ -68,7 +68,7 @@ const worksData = [
       './images/cs-about-mobile.png',
       './images/cs-navigation.png',
     ],
-    technologies: ['HTML', 'CSS', 'Javascript'],
+    technologies: ['HTML5', 'CSS3', 'Javascript'],
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
@@ -84,14 +84,14 @@ const worksData = [
       + 'commercial and scientific space travel services. '
       + 'The application will allow users to book rockets and join selected space missions.',
     img: [
-      './images/st-rockets.png',
+      './images/rockets-ideal.png',
       './images/st-missions.png',
-      './images/st-dragons.png',
+      './images/dragons-ideal.png',
       './images/st-user-noreserve.png',
       './images/st-user-selected.png',
     ],
-    technologies: ['HTML', 'CSS', 'Javascript', 'React', 'Redux'],
-    devName: 'Canopy',
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux'],
+    devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
     liveVersion: 'https://space-travellers-hub-app.onrender.com/',
@@ -100,31 +100,39 @@ const worksData = [
 
   {
     id: 3,
-    Company: 'Facebook 360',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
+    Company: 'Stox App',
+    description: 'StoX is a web application for financial institutions'
+      + ' that pulls data of available stocks in the market'
+      + 'and provides analysis in trends of a particular stock'
+      + 'selected by user over a certain period of time e.g '
+      + '14days in a candlestick graph.',
     img: [
-      './images/Nature.svg',
-      './images/Nature.svg',
-      './images/Nature.svg',
+      './images/stox-1.png',
+      './images/stox-2.png',
+      './images/stox-3.png',
     ],
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    devName: 'Canopy',
-    devRole: 'Back End Dev',
-    year: 2015,
+    technologies: ['HTML3', 'CSS5', 'Javascript', 'React', 'Redux', 'ApexChat.js'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
     liveVersion: 'https://programkingabel.github.io/',
     sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
   },
 
   {
     id: 4,
-    Company: 'Uber Navigation',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
+    Company: 'Bookstore CMS',
+    description: 'BookStore is a web App that allows you'
+      + 'to Display a list of books, Add a book, Remove'
+      + 'a selected book. This application, imitates the'
+      + 'use React and Redux in the context of a real application; '
+      + 'Data is received from, mutated and sent/ Preserved in the server through API call actions.',
     img: [
-      './images/grd2.svg',
-      './images/grd2.svg',
-      './images/grd2.svg',
+      './images/bookstoresnip.PNG',
+      './images/bookstore-2.png',
+      './images/book',
     ],
-    technologies: ['HTML', 'CSS', 'Javascript', 'Ruby on Rails'],
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'Ruby on Rails'],
     devName: 'Uber',
     devRole: 'Back End Dev',
     year: 2018,
