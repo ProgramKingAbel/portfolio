@@ -461,6 +461,19 @@ button[type="submit"] {
   color: #253858;
 }
 
+.skillset-lang {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.skillset-lang.show {
+  opacity: 1;
+  max-height: 500px;
+}
+
+
 /* ABOUT SECTION COMPLETE */
 
 /* START CONTACT ME SECTION */

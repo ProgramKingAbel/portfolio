@@ -90,7 +90,7 @@ const worksData = [
       './images/st-user-noreserve.png',
       './images/st-user-selected.png',
     ],
-    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux'],
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Jest', 'React testing Library'],
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
@@ -111,7 +111,7 @@ const worksData = [
       './images/stox-2.png',
       './images/stox-3.png',
     ],
-    technologies: ['HTML3', 'CSS5', 'Javascript', 'React', 'Redux', 'ApexChat.js'],
+    technologies: ['HTML3', 'CSS5', 'Javascript', 'React', 'Redux', 'ApexChat.js', 'Jest', 'React testing Library'],
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
@@ -130,31 +130,16 @@ const worksData = [
     img: [
       './images/bookstoresnip.PNG',
       './images/bookstore-2.png',
-      './images/book',
+      './images/bookstore-3.png',
     ],
-    technologies: ['HTML5', 'CSS3', 'Javascript', 'Ruby on Rails'],
-    devName: 'Uber',
-    devRole: 'Back End Dev',
-    year: 2018,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'RestAPI', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://online-bookstore-erh5.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/bookstore',
   },
 
-  {
-    id: 5,
-    Company: 'Tonic',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: [
-      './images/Tonic.svg',
-  
-    ],
-    technologies: ['HTML', 'CSS', 'Javascript', 'Ruby'],
-    devName: 'Canopy',
-    devRole: 'Back End Dev',
-    year: 2015,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
-  },
 ];
 
 worksData.forEach((element, i) => {
@@ -289,3 +274,20 @@ carousels.forEach(function(carousel) {
   // Start auto-scrolling for each carousel when the page loads
   window.addEventListener('load', startAutoScroll);
 });
+
+var langHeads = document.querySelectorAll('.lang-head');
+
+langHeads.forEach(function(langHead) {
+  var skillsetLang = langHead.nextElementSibling;
+  var angleIcons = langHead.querySelectorAll('i');
+
+  langHead.addEventListener('click', function() {
+    skillsetLang.classList.toggle('show');
+    angleIcons.forEach(function(angleIcon) {
+      angleIcon.classList.toggle('uil-angle-up');
+    });
+  });
+});
+
+
+
