@@ -250,11 +250,28 @@ a {
   padding-bottom: 1rem;
 }
 
-.card-image img,
-.modal-img {
+.carousel {
   width: 100%;
   height: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
+
+.carousel-content {
+  display: inline-flex;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.card-image img,
+.modal-img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .card-details .title,
 .modal-card h2 {

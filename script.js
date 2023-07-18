@@ -127,10 +127,24 @@ worksData.forEach((element, i) => {
   card.classList = 'card';
 
   card.innerHTML = `
-            <div class="card-image">
-            <img src=${worksData[i].img}>
+          <div class="carousel">
+            <div class="carousel-content">
+
+                <div class="carousel-item card-image">
+                  <img src=${worksData[i].img}>
+                </div>
+
+                <div class="carousel-item card-image">
+                  <img src=${worksData[i].img}>
+                </div>
+
+                <div class="carousel-item card-image">
+                  <img src=${worksData[i].img}>
+                </div>
+
             </div>
-            <div class="card-details">
+          </div>
+          <div class="card-details">
             <h2 class="title">${worksData[i].Company}</h2>
             <ul class="developer-details">
                 <li>${worksData[i].devName}</li>
@@ -144,7 +158,7 @@ worksData.forEach((element, i) => {
                 ${worksData[i].technologies.map((j) => `<li>${j}</li>`).join('')}
                 </ul>
                 <a data-modal-target=".modal-wrapper" id="${worksData[i].id}" class="open-modal" href="JavaScript:void(0)">See Project</a>
-                         </div>
+          </div>
 `;
 
   projectsContainer.append(card);
