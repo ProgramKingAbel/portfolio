@@ -8,6 +8,7 @@
 
 body {
   background: #e5e5e5;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -240,7 +241,7 @@ a {
 }
 
 .modal-card {
-  width: 99%;
+  width: auto;
   height: 95vh;
   gap: 0.4rem;
   z-index: 999;
@@ -266,7 +267,11 @@ a {
   margin-right: 10px;
 }
 
-.card-image img,
+.card-image img {
+  max-width: 100%;
+  height: 50vh;
+}
+
 .modal-img {
   max-width: 100%;
   height: auto;
@@ -313,7 +318,7 @@ a {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
 }
 
 .developer-details > li:nth-child(1) {
@@ -339,6 +344,7 @@ a {
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
+  margin-bottom: 1.2rem;
 }
 
 .modal-buttons {
@@ -628,11 +634,17 @@ button[type="submit"] {
     background-image: url('./images/ctback.png');
   }
 
+  .modal-img {
+    width: 100vh;
+    aspect-ratio: 1;
+    align-self: center;
+  }
+
   .modal-content-d {
     display: grid;
     grid-template-columns: 70% 30%;
     gap: 0.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
   .contact-wrapper form {

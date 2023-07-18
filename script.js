@@ -61,7 +61,11 @@ const worksData = [
               + 'This website gives information about their current state of events, '
       + 'conferences and a general view of their organization.',
 
-    img: './images/portfolio-1.png',
+    img: [
+      './images/portfolio-1.png',
+      './images/portfolio-1.png',
+      './images/portfolio-1.png',
+    ],
     technologies: ['HTML', 'CSS', 'Javascript'],
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
@@ -74,7 +78,11 @@ const worksData = [
     id: 2,
     Company: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/Nature.svg',
+    img: [
+      './images/Nature.svg',
+      './images/Nature.svg',
+      './images/Nature.svg',
+    ],
     technologies: ['HTML', 'CSS', 'Javascript'],
     devName: 'Canopy',
     devRole: 'Back End Dev',
@@ -87,7 +95,11 @@ const worksData = [
     id: 3,
     Company: 'Facebook 360',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/Nature.svg',
+    img: [
+      './images/Nature.svg',
+      './images/Nature.svg',
+      './images/Nature.svg',
+    ],
     technologies: ['HTML', 'CSS', 'Javascript'],
     devName: 'Canopy',
     devRole: 'Back End Dev',
@@ -100,7 +112,11 @@ const worksData = [
     id: 4,
     Company: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/grd2.svg',
+    img: [
+      './images/grd2.svg',
+      './images/grd2.svg',
+      './images/grd2.svg',
+    ],
     technologies: ['HTML', 'CSS', 'Javascript', 'Ruby on Rails'],
     devName: 'Uber',
     devRole: 'Back End Dev',
@@ -113,7 +129,10 @@ const worksData = [
     id: 5,
     Company: 'Tonic',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/Tonic.svg',
+    img: [
+      './images/Tonic.svg',
+  
+    ],
     technologies: ['HTML', 'CSS', 'Javascript', 'Ruby'],
     devName: 'Canopy',
     devRole: 'Back End Dev',
@@ -133,19 +152,9 @@ worksData.forEach((element, i) => {
   card.innerHTML = `
           <div class="carousel">
             <div class="carousel-content">
-
                 <div class="carousel-item card-image">
-                  <img src=${worksData[i].img}>
+                  ${worksData[i].img.map((item) => `<img src=${item}>`)}
                 </div>
-
-                <div class="carousel-item card-image">
-                  <img src=${worksData[i].img}>
-                </div>
-
-                <div class="carousel-item card-image">
-                  <img src=${worksData[i].img}>
-                </div>
-
             </div>
           </div>
           <div class="card-details">
@@ -196,7 +205,7 @@ projectsContainer.addEventListener('click', (e) => {
             <span></span>
             <li>${getItem.year}</li>
         </ul>
-        <img class = "modal-img" src=${getItem.img}>
+        <div><img class = "modal-img" src=${getItem.img[0]}></div>
         <div class="modal-content-d">
         <p>${getItem.description}</p>
         <div class="content2">
@@ -222,4 +231,46 @@ projectsContainer.addEventListener('click', (e) => {
       }
     });
   }
+});
+
+// Auto-scroll variables
+var carousels = document.querySelectorAll('.carousel');
+var scrollIntervals = [];
+var scrollAmount = 200; // Adjust scroll amount as needed
+
+// Clone and append carousel items for each carousel
+carousels.forEach(function(carousel) {
+  var carouselItems = carousel.querySelectorAll('.carousel-item');
+  var carouselInner = carousel.querySelector('.carousel-content');
+
+  carouselItems.forEach(function(item) {
+    carouselInner.appendChild(item.cloneNode(true));
+  });
+
+  // Start auto-scrolling for each carousel
+  function startAutoScroll() {
+    scrollIntervals.push(setInterval(function() {
+      scrollCarousel(carousel);
+    }, 2000)); // Adjust scroll delay as needed
+  }
+
+  // Scroll the carousel
+  function scrollCarousel(carousel) {
+    carousel.scrollBy(scrollAmount, 0);
+
+    // Check if reached the cloned items
+    if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+      carousel.scrollLeft = 0; // Reset to the beginning of the original items
+    }
+  }
+
+  // Stop auto-scrolling for each carousel
+  function stopAutoScroll() {
+    scrollIntervals.forEach(function(interval) {
+      clearInterval(interval);
+    });
+  }
+
+  // Start auto-scrolling for each carousel when the page loads
+  window.addEventListener('load', startAutoScroll);
 });
