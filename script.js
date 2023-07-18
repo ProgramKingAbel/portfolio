@@ -78,19 +78,24 @@ const worksData = [
 
   {
     id: 2,
-    Company: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
+    Company: 'Space Travelers Hub',
+    description: 'Space Travelers'
+      + 'Hub is a web application for a company that provides '
+      + 'commercial and scientific space travel services. '
+      + 'The application will allow users to book rockets and join selected space missions.',
     img: [
-      './images/Nature.svg',
-      './images/Nature.svg',
-      './images/Nature.svg',
+      './images/st-rockets.png',
+      './images/st-missions.png',
+      './images/st-dragons.png',
+      './images/st-user-noreserve.png',
+      './images/st-user-selected.png',
     ],
-    technologies: ['HTML', 'CSS', 'Javascript'],
+    technologies: ['HTML', 'CSS', 'Javascript', 'React', 'Redux'],
     devName: 'Canopy',
-    devRole: 'Back End Dev',
-    year: 2015,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://space-travellers-hub-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/space_travelers_hub',
   },
 
   {
@@ -238,7 +243,7 @@ projectsContainer.addEventListener('click', (e) => {
 // Auto-scroll variables
 var carousels = document.querySelectorAll('.carousel');
 var scrollIntervals = [];
-var scrollAmount = 250; // Adjust scroll amount as needed
+var scrollAmount = 150; // Adjust scroll amount as needed
 
 // Clone and append carousel items for each carousel
 carousels.forEach(function(carousel) {
