@@ -630,7 +630,7 @@ button[type="submit"] {
     flex-direction: column;
   }
 
-  .skillset-type:nth-child(1) {
+  .skillset-type {
     display: flex;
     flex-direction: column;
   }
