@@ -254,7 +254,7 @@ a {
 .carousel {
   width: 100%;
   height: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
   white-space: nowrap;
 }
 
@@ -635,8 +635,8 @@ button[type="submit"] {
   }
 
   .modal-img {
-    width: 100vh;
-    aspect-ratio: 1;
+    width: 100%;
+    /* aspect-ratio: 1; */
     align-self: center;
   }
 

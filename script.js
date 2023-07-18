@@ -213,8 +213,8 @@ projectsContainer.addEventListener('click', (e) => {
         ${getItem.technologies.map((j) => `<li>${j}</li>`).join('')}
         </ul>
         <div class="modal-buttons">   
-        <a href="${getItem.sourceLink}"><img src="./images/Enabled.png"></a>
-        <a href="${getItem.liveVersion}"><img src="./images/Enabled1.png"></a>
+        <a href="${getItem.sourceLink}" target="_blank"><img src="./images/Enabled.png"></a>
+        <a href="${getItem.liveVersion}" target="_blank"><img src="./images/Enabled1.png"></a>
         </div>
         </div> 
         </div>
