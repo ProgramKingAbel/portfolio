@@ -63,8 +63,10 @@ const worksData = [
 
     img: [
       './images/portfolio-1.png',
-      './images/portfolio-1.png',
-      './images/portfolio-1.png',
+      './images/cs-home-mobile.png',
+      './images/cs-about.png',
+      './images/cs-about-mobile.png',
+      './images/cs-navigation.png',
     ],
     technologies: ['HTML', 'CSS', 'Javascript'],
     devName: 'Abel Morara',
@@ -236,7 +238,7 @@ projectsContainer.addEventListener('click', (e) => {
 // Auto-scroll variables
 var carousels = document.querySelectorAll('.carousel');
 var scrollIntervals = [];
-var scrollAmount = 200; // Adjust scroll amount as needed
+var scrollAmount = 250; // Adjust scroll amount as needed
 
 // Clone and append carousel items for each carousel
 carousels.forEach(function(carousel) {
@@ -251,7 +253,7 @@ carousels.forEach(function(carousel) {
   function startAutoScroll() {
     scrollIntervals.push(setInterval(function() {
       scrollCarousel(carousel);
-    }, 2000)); // Adjust scroll delay as needed
+    }, 3000)); // Adjust scroll delay as needed
   }
 
   // Scroll the carousel
