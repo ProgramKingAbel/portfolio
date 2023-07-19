@@ -261,7 +261,7 @@ carousels.forEach((carousel) => {
   function startAutoScroll() {
     scrollIntervals.push(setInterval(() => {
       scrollCarousel(carousel);
-    }, 3000)); // Adjust scroll delay as needed
+    }, 2200)); // Adjust scroll delay as needed
   }
 
   // Start auto-scrolling for each carousel when the page loads
