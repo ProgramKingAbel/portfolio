@@ -115,8 +115,8 @@ const worksData = [
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
+    liveVersion: 'https://stox-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/metrics-webapp',
   },
 
   {
