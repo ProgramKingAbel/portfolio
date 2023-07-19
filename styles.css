@@ -425,6 +425,8 @@ button[type="submit"] {
 
 .skillset-type {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .skillset hr {
@@ -471,6 +473,7 @@ button[type="submit"] {
 .skillset-lang.show {
   opacity: 1;
   max-height: 500px;
+
 }
 
 
