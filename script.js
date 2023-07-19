@@ -234,25 +234,18 @@ projectsContainer.addEventListener('click', (e) => {
 });
 
 // Auto-scroll variables
-var carousels = document.querySelectorAll('.carousel');
-var scrollIntervals = [];
-var scrollAmount = 150; // Adjust scroll amount as needed
+const carousels = document.querySelectorAll('.carousel');
+const scrollIntervals = [];
+const scrollAmount = 150; // Adjust scroll amount as needed
 
 // Clone and append carousel items for each carousel
-carousels.forEach(function(carousel) {
-  var carouselItems = carousel.querySelectorAll('.carousel-item');
-  var carouselInner = carousel.querySelector('.carousel-content');
+carousels.forEach((carousel) => {
+  const carouselItems = carousel.querySelectorAll('.carousel-item');
+  const carouselInner = carousel.querySelector('.carousel-content');
 
-  carouselItems.forEach(function(item) {
+  carouselItems.forEach((item) => {
     carouselInner.appendChild(item.cloneNode(true));
   });
-
-  // Start auto-scrolling for each carousel
-  function startAutoScroll() {
-    scrollIntervals.push(setInterval(function() {
-      scrollCarousel(carousel);
-    }, 3000)); // Adjust scroll delay as needed
-  }
 
   // Scroll the carousel
   function scrollCarousel(carousel) {
@@ -264,30 +257,27 @@ carousels.forEach(function(carousel) {
     }
   }
 
-  // Stop auto-scrolling for each carousel
-  function stopAutoScroll() {
-    scrollIntervals.forEach(function(interval) {
-      clearInterval(interval);
-    });
+  // Start auto-scrolling for each carousel
+  function startAutoScroll() {
+    scrollIntervals.push(setInterval(() => {
+      scrollCarousel(carousel);
+    }, 3000)); // Adjust scroll delay as needed
   }
 
   // Start auto-scrolling for each carousel when the page loads
   window.addEventListener('load', startAutoScroll);
 });
 
-var langHeads = document.querySelectorAll('.lang-head');
+const langHeads = document.querySelectorAll('.lang-head');
 
-langHeads.forEach(function(langHead) {
-  var skillsetLang = langHead.nextElementSibling;
-  var angleIcons = langHead.querySelectorAll('i');
+langHeads.forEach((langHead) => {
+  const skillsetLang = langHead.nextElementSibling;
+  const angleIcons = langHead.querySelectorAll('i');
 
-  langHead.addEventListener('click', function() {
+  langHead.addEventListener('click', () => {
     skillsetLang.classList.toggle('show');
-    angleIcons.forEach(function(angleIcon) {
+    angleIcons.forEach((angleIcon) => {
       angleIcon.classList.toggle('uil-angle-up');
     });
   });
 });
-
-
-
