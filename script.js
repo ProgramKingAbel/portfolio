@@ -61,8 +61,14 @@ const worksData = [
               + 'This website gives information about their current state of events, '
       + 'conferences and a general view of their organization.',
 
-    img: './images/portfolio-1.png',
-    technologies: ['HTML', 'CSS', 'Javascript'],
+    img: [
+      './images/portfolio-1.png',
+      './images/cs-home-mobile.png',
+      './images/cs-about.png',
+      './images/cs-about-mobile.png',
+      './images/cs-navigation.png',
+    ],
+    technologies: ['HTML5', 'CSS3', 'Javascript'],
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
@@ -72,55 +78,68 @@ const worksData = [
 
   {
     id: 2,
-    Company: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/Nature.svg',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    devName: 'Canopy',
-    devRole: 'Back End Dev',
-    year: 2015,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
+    Company: 'Space Travelers Hub',
+    description: 'Space Travelers'
+      + 'Hub is a web application for a company that provides '
+      + 'commercial and scientific space travel services. '
+      + 'The application will allow users to book rockets and join selected space missions.',
+    img: [
+      './images/rockets-ideal.png',
+      './images/st-missions.png',
+      './images/dragons-ideal.png',
+      './images/st-user-noreserve.png',
+      './images/st-user-selected.png',
+    ],
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://space-travellers-hub-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/space_travelers_hub',
   },
 
   {
     id: 3,
-    Company: 'Facebook 360',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/Nature.svg',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    devName: 'Canopy',
-    devRole: 'Back End Dev',
-    year: 2015,
+    Company: 'Stox App',
+    description: 'StoX is a web application for financial institutions'
+      + ' that pulls data of available stocks in the market'
+      + 'and provides analysis in trends of a particular stock'
+      + 'selected by user over a certain period of time e.g '
+      + '14days in a candlestick graph.',
+    img: [
+      './images/stox-1.png',
+      './images/stox-2.png',
+      './images/stox-3.png',
+    ],
+    technologies: ['HTML3', 'CSS5', 'Javascript', 'React', 'Redux', 'ApexChat.js', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
     liveVersion: 'https://programkingabel.github.io/',
     sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
   },
 
   {
     id: 4,
-    Company: 'Uber Navigation',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/grd2.svg',
-    technologies: ['HTML', 'CSS', 'Javascript', 'Ruby on Rails'],
-    devName: 'Uber',
-    devRole: 'Back End Dev',
-    year: 2018,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
+    Company: 'Bookstore CMS',
+    description: 'BookStore is a web App that allows you'
+      + 'to Display a list of books, Add a book, Remove'
+      + 'a selected book. This application, imitates the'
+      + 'use React and Redux in the context of a real application; '
+      + 'Data is received from, mutated and sent/ Preserved in the server through API call actions.',
+    img: [
+      './images/bookstoresnip.PNG',
+      './images/bookstore-2.png',
+      './images/bookstore-3.png',
+    ],
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'RestAPI', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://online-bookstore-erh5.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/bookstore',
   },
 
-  {
-    id: 5,
-    Company: 'Tonic',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    img: './images/Tonic.svg',
-    technologies: ['HTML', 'CSS', 'Javascript', 'Ruby'],
-    devName: 'Canopy',
-    devRole: 'Back End Dev',
-    year: 2015,
-    liveVersion: 'https://programkingabel.github.io/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Abel-Morara-Portfolio',
-  },
 ];
 
 worksData.forEach((element, i) => {
@@ -131,10 +150,14 @@ worksData.forEach((element, i) => {
   card.classList = 'card';
 
   card.innerHTML = `
-            <div class="card-image">
-            <img src=${worksData[i].img}>
+          <div class="carousel">
+            <div class="carousel-content">
+                <div class="carousel-item card-image">
+                  ${worksData[i].img.map((item) => `<img src=${item}>`)}
+                </div>
             </div>
-            <div class="card-details">
+          </div>
+          <div class="card-details">
             <h2 class="title">${worksData[i].Company}</h2>
             <ul class="developer-details">
                 <li>${worksData[i].devName}</li>
@@ -148,7 +171,7 @@ worksData.forEach((element, i) => {
                 ${worksData[i].technologies.map((j) => `<li>${j}</li>`).join('')}
                 </ul>
                 <a data-modal-target=".modal-wrapper" id="${worksData[i].id}" class="open-modal" href="JavaScript:void(0)">See Project</a>
-                         </div>
+          </div>
 `;
 
   projectsContainer.append(card);
@@ -182,7 +205,7 @@ projectsContainer.addEventListener('click', (e) => {
             <span></span>
             <li>${getItem.year}</li>
         </ul>
-        <img class = "modal-img" src=${getItem.img}>
+        <div><img class = "modal-img" src=${getItem.img[0]}></div>
         <div class="modal-content-d">
         <p>${getItem.description}</p>
         <div class="content2">
@@ -190,8 +213,8 @@ projectsContainer.addEventListener('click', (e) => {
         ${getItem.technologies.map((j) => `<li>${j}</li>`).join('')}
         </ul>
         <div class="modal-buttons">   
-        <a href="${getItem.sourceLink}"><img src="./images/Enabled.png"></a>
-        <a href="${getItem.liveVersion}"><img src="./images/Enabled1.png"></a>
+        <a href="${getItem.sourceLink}" target="_blank"><img src="./images/Enabled.png"></a>
+        <a href="${getItem.liveVersion}" target="_blank"><img src="./images/Enabled1.png"></a>
         </div>
         </div> 
         </div>
@@ -208,4 +231,53 @@ projectsContainer.addEventListener('click', (e) => {
       }
     });
   }
+});
+
+// Auto-scroll variables
+const carousels = document.querySelectorAll('.carousel');
+const scrollIntervals = [];
+const scrollAmount = 150; // Adjust scroll amount as needed
+
+// Clone and append carousel items for each carousel
+carousels.forEach((carousel) => {
+  const carouselItems = carousel.querySelectorAll('.carousel-item');
+  const carouselInner = carousel.querySelector('.carousel-content');
+
+  carouselItems.forEach((item) => {
+    carouselInner.appendChild(item.cloneNode(true));
+  });
+
+  // Scroll the carousel
+  function scrollCarousel(carousel) {
+    carousel.scrollBy(scrollAmount, 0);
+
+    // Check if reached the cloned items
+    if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+      carousel.scrollLeft = 0; // Reset to the beginning of the original items
+    }
+  }
+
+  // Start auto-scrolling for each carousel
+  function startAutoScroll() {
+    scrollIntervals.push(setInterval(() => {
+      scrollCarousel(carousel);
+    }, 2200)); // Adjust scroll delay as needed
+  }
+
+  // Start auto-scrolling for each carousel when the page loads
+  window.addEventListener('load', startAutoScroll);
+});
+
+const langHeads = document.querySelectorAll('.lang-head');
+
+langHeads.forEach((langHead) => {
+  const skillsetLang = langHead.nextElementSibling;
+  const angleIcons = langHead.querySelectorAll('i');
+
+  langHead.addEventListener('click', () => {
+    skillsetLang.classList.toggle('show');
+    angleIcons.forEach((angleIcon) => {
+      angleIcon.classList.toggle('uil-angle-up');
+    });
+  });
 });
