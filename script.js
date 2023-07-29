@@ -78,6 +78,36 @@ const worksData = [
 
   {
     id: 2,
+    Company: 'IKI FITNESS APP',
+    description: 'Proud to have taken part in development IKI fitness App. '
+      + 'By coding the Welcoming screens and onboarding process screens '
+              + 'You can get the apk here (https://expo.dev/artifacts/eas/oxaC5kHG8hcfq5h5QizCZD.apk) and install '
+      + 'Or checkout the preinstalled version in an online simulator on '
+      + 'See Live demo button below.'
+      + ' Enjoy the smooth user experience and let me know if you liked it. ',
+
+    img: [
+      './images/iki1.png',
+      './images/iki00.png',
+      './images/iki2.png',
+      './images/iki6.png',
+      './images/iki8.png',
+      './images/iki9.png',
+      './images/iki3.png',
+      './images/iki4.png',
+      './images/iki5.png',
+    ],
+    technologies: ['Android', 'React Native', 'expo'],
+    devName: 'Abel Morara',
+    devRole: 'Frontend Mobile app dev',
+    year: 2023,
+    liveVersion: 'https://appetize.io/app/awpaovb4cudkhrl4czi6ieby5u?device=pixel4&osVersion=11.0&scale=75',
+    sourceLink: 'https://github.com/ProgramKingAbel',
+  },
+
+
+  {
+    id: 3,
     Company: 'Space Travelers Hub',
     description: 'Space Travelers'
       + 'Hub is a web application for a company that provides '
@@ -99,7 +129,7 @@ const worksData = [
   },
 
   {
-    id: 3,
+    id: 4,
     Company: 'Stox App',
     description: 'StoX is a web application for financial institutions'
       + ' that pulls data of available stocks in the market'
@@ -120,7 +150,7 @@ const worksData = [
   },
 
   {
-    id: 4,
+    id: 5,
     Company: 'Bookstore CMS',
     description: 'BookStore is a web App that allows you'
       + 'to Display a list of books, Add a book, Remove'
