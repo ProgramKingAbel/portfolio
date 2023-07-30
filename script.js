@@ -79,10 +79,9 @@ const worksData = [
   {
     id: 2,
     Company: 'IKI FITNESS APP',
-    description: 'Proud to have taken part in development IKI fitness App. '
-      + 'By coding the Welcoming screens and onboarding process screens '
-              + 'You can get the apk here (https://expo.dev/artifacts/eas/oxaC5kHG8hcfq5h5QizCZD.apk) and install '
-      + 'Or checkout the preinstalled version in an online simulator on '
+    description: 'Proud to have taken part in development IKI fitness App '
+      + 'by coding the Welcoming and onboarding process screens '
+      + 'You can checkout the preinstalled version of app in an online simulator on '
       + 'See Live demo button below.'
       + ' Enjoy the smooth user experience and let me know if you liked it. ',
 
@@ -99,13 +98,12 @@ const worksData = [
     ],
     technologies: ['Android', 'React Native', 'expo'],
     devName: 'Abel Morara',
-    devRole: 'Frontend Mobile app dev',
+    devRole: 'Frontend dev',
     year: 2023,
     liveVersion: 'https://appetize.io/app/awpaovb4cudkhrl4czi6ieby5u?device=pixel4&osVersion=11.0&scale=75',
     sourceLink: 'https://github.com/ProgramKingAbel',
   },
-
-
+  
   {
     id: 3,
     Company: 'Space Travelers Hub',
