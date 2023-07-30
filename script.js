@@ -79,11 +79,12 @@ const worksData = [
   {
     id: 2,
     Company: 'IKI FITNESS APP',
-    description: 'Proud to have taken part in development IKI fitness App '
+    description: 'Proud to have taken part in development IKI fitness App Via Digisoft '
       + 'by coding the Welcoming and onboarding process screens '
       + 'You can checkout the preinstalled version of app in an online simulator on '
       + 'See Live demo button below.'
-      + ' Enjoy the smooth user experience and let me know if you liked it. ',
+      + ' Enjoy the smooth user experience and let me know if you liked it. '
+      + 'Home > Get Started > Already have an account > Login ',
 
     img: [
       './images/iki1.png',
