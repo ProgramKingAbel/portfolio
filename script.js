@@ -61,25 +61,34 @@ const worksData = [
     'find and book accommodations. You can select available rooms for a ' + 
     'graphic list on the home page of the website, or you can just click ' +
     'on the reserve menu item and see the full list of available rooms. ' + 
-    'You can visit the repository for the backend of this project.' ,
+    'You can visit the repositories for the backend and frontend of this project.',
 
     img: [
-      './images/portfolio-1.png',
-      './images/cs-home-mobile.png',
-      './images/cs-about.png',
-      './images/cs-about-mobile.png',
-      './images/cs-navigation.png',
+      './images/landing_page.png',
+      './images/register.png',
+      './images/sign_in.png',
+      './images/rooms.png',
+      './images/rooms_phone.png',
+      './images/phone_nav.png',
+      './images/room.png',
+      './images/rooms_reservation.png',
+      './images/add_room.png',
+      './images/delete_room.png',
+      './images/reserve.png',
+      './images/reserve_r.png',
+      './images/reserve_room.png',
+      './images/myreservations.png',
     ],
-    technologies: ['HTML5', 'CSS3', 'Javascript'],
+    technologies: ['React', 'Ruby', 'Rails', 'Sass', 'Tailwind'],
     devName: 'Abel Morara',
     devRole: 'Full-Stack Dev',
     year: 2023,
-    liveVersion: 'https://programkingabel.github.io/Conference-site-/',
-    sourceLink: 'https://github.com/ProgramKingAbel/Conference-site-',
+    liveVersion: 'https://hotel-hub-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/hotel-hub-backend',
   },
 
   {
-    id: 1,
+    id: 2,
     Company: 'JA CONFERENCE WEBSITE',
     description: 'Junior Achievement Kenya is an organization that'
       + 'seeks to narture local young talents with enterprenurial mind.'
@@ -102,7 +111,7 @@ const worksData = [
   },
 
   {
-    id: 2,
+    id: 3,
     Company: 'IKI FITNESS APP',
     description: 'Proud to have taken part in development IKI fitness App Via Digisoft '
       + 'by coding the Welcoming and onboarding process screens '
@@ -131,7 +140,7 @@ const worksData = [
   },
 
   {
-    id: 3,
+    id: 4,
     Company: 'Space Travelers Hub',
     description: 'Space Travelers'
       + 'Hub is a web application for a company that provides '
@@ -153,7 +162,7 @@ const worksData = [
   },
 
   {
-    id: 4,
+    id: 5,
     Company: 'Stox App',
     description: 'StoX is a web application for financial institutions'
       + ' that pulls data of available stocks in the market'
@@ -174,7 +183,7 @@ const worksData = [
   },
 
   {
-    id: 5,
+    id: 6,
     Company: 'Bookstore CMS',
     description: 'BookStore is a web App that allows you'
       + 'to Display a list of books, Add a book, Remove'
