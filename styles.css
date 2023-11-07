@@ -243,8 +243,10 @@ a {
 .modal-card {
   width: auto;
   height: auto;
+  max-height: 80vh;
   gap: 0.4rem;
   z-index: 999;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
