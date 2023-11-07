@@ -242,10 +242,9 @@ a {
 
 .modal-card {
   width: auto;
-  height: 80vh;
+  height: auto;
   gap: 0.4rem;
   z-index: 999;
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -661,8 +660,13 @@ button[type="submit"] {
     background-image: url('./images/ctback.png');
   }
 
+  .modal-card {
+    width: 85vh;
+  }
+
   .modal-img {
-    width: 100%;
+    width: 85vh;
+    height: 45vh;
 
     /* aspect-ratio: 1; */
     align-self: center;

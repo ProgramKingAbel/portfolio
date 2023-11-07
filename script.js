@@ -96,6 +96,7 @@ const worksData = [
       + 'conferences and a general view of their organization.',
 
     img: [
+      './images/confer.png',
       './images/portfolio-1.png',
       './images/cs-home-mobile.png',
       './images/cs-about.png',
@@ -170,6 +171,7 @@ const worksData = [
       + 'selected by user over a certain period of time e.g '
       + '14days in a candlestick graph.',
     img: [
+      './images/stox-aa.png',
       './images/stox-1.png',
       './images/stox-2.png',
       './images/stox-3.png',
