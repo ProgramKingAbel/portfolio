@@ -242,7 +242,7 @@ a {
 
 .modal-card {
   width: auto;
-  height: 95vh;
+  height: 80vh;
   gap: 0.4rem;
   z-index: 999;
   overflow-y: scroll;

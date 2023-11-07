@@ -55,6 +55,31 @@ window.addEventListener('load', () => {
 const worksData = [
   {
     id: 1,
+    Company: 'Hotel Hub Full-stack App',
+    description: 'Hotel Hub is a website that offers hotel booking and ' +
+    'reservation services for travelers, providing a convenient way to ' +
+    'find and book accommodations. You can select available rooms for a ' + 
+    'graphic list on the home page of the website, or you can just click ' +
+    'on the reserve menu item and see the full list of available rooms. ' + 
+    'You can visit the repository for the backend of this project.' ,
+
+    img: [
+      './images/portfolio-1.png',
+      './images/cs-home-mobile.png',
+      './images/cs-about.png',
+      './images/cs-about-mobile.png',
+      './images/cs-navigation.png',
+    ],
+    technologies: ['HTML5', 'CSS3', 'Javascript'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://programkingabel.github.io/Conference-site-/',
+    sourceLink: 'https://github.com/ProgramKingAbel/Conference-site-',
+  },
+
+  {
+    id: 1,
     Company: 'JA CONFERENCE WEBSITE',
     description: 'Junior Achievement Kenya is an organization that'
       + 'seeks to narture local young talents with enterprenurial mind.'
