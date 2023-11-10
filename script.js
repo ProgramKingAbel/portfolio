@@ -55,6 +55,40 @@ window.addEventListener('load', () => {
 const worksData = [
   {
     id: 1,
+    Company: 'Hotel Hub Full-stack App',
+    description: 'Hotel Hub is a website that offers hotel booking and '
+    + 'reservation services for travelers, providing a convenient way to '
+    + 'find and book accommodations. You can select available rooms for a '
+    + 'graphic list on the home page of the website, or you can just click '
+    + 'on the reserve menu item and see the full list of available rooms. '
+    + 'You can visit the repositories for the backend and frontend of this project.',
+
+    img: [
+      './images/landing_page.png',
+      './images/register.png',
+      './images/sign_in.png',
+      './images/rooms.png',
+      './images/rooms_phone.png',
+      './images/phone_nav.png',
+      './images/room.png',
+      './images/rooms_reservation.png',
+      './images/add_room.png',
+      './images/delete_room.png',
+      './images/reserve.png',
+      './images/reserve_r.png',
+      './images/reserve_room.png',
+      './images/myreservations.png',
+    ],
+    technologies: ['React', 'Ruby', 'Rails', 'Sass', 'Tailwind'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://hotel-hub-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/hotel-hub-backend',
+  },
+
+  {
+    id: 2,
     Company: 'JA CONFERENCE WEBSITE',
     description: 'Junior Achievement Kenya is an organization that'
       + 'seeks to narture local young talents with enterprenurial mind.'
@@ -62,6 +96,7 @@ const worksData = [
       + 'conferences and a general view of their organization.',
 
     img: [
+      './images/confer.png',
       './images/portfolio-1.png',
       './images/cs-home-mobile.png',
       './images/cs-about.png',
@@ -77,7 +112,71 @@ const worksData = [
   },
 
   {
-    id: 2,
+    id: 4,
+    Company: 'Space Travelers Hub',
+    description: 'Space Travelers'
+      + 'Hub is a web application for a company that provides '
+      + 'commercial and scientific space travel services. '
+      + 'The application will allow users to book rockets and join selected space missions.',
+    img: [
+      './images/rockets-ideal.png',
+      './images/st-missions.png',
+      './images/dragons-ideal.png',
+      './images/st-user-noreserve.png',
+      './images/st-user-selected.png',
+    ],
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://space-travellers-hub-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/space_travelers_hub',
+  },
+
+  {
+    id: 5,
+    Company: 'Stox App',
+    description: 'StoX is a web application for financial institutions'
+      + ' that pulls data of available stocks in the market'
+      + 'and provides analysis in trends of a particular stock'
+      + 'selected by user over a certain period of time e.g '
+      + '14days in a candlestick graph.',
+    img: [
+      './images/stox-aa.png',
+      './images/stox-1.png',
+      './images/stox-2.png',
+      './images/stox-3.png',
+    ],
+    technologies: ['HTML3', 'CSS5', 'Javascript', 'React', 'Redux', 'ApexChat.js', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://stox-app.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/metrics-webapp',
+  },
+
+  {
+    id: 6,
+    Company: 'Bookstore CMS',
+    description: 'BookStore is a web App that allows you'
+      + 'to Display a list of books, Add a book, Remove'
+      + 'a selected book. This application, imitates the'
+      + 'use React and Redux in the context of a real application; '
+      + 'Data is received from, mutated and sent/ Preserved in the server through API call actions.',
+    img: [
+      './images/bookstoresnip.PNG',
+      './images/bookstore-2.png',
+      './images/bookstore-3.png',
+    ],
+    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'RestAPI', 'Jest', 'React testing Library'],
+    devName: 'Abel Morara',
+    devRole: 'Full-Stack Dev',
+    year: 2023,
+    liveVersion: 'https://online-bookstore-erh5.onrender.com/',
+    sourceLink: 'https://github.com/ProgramKingAbel/bookstore',
+  },
+  {
+    id: 3,
     Company: 'IKI FITNESS APP',
     description: 'Proud to have taken part in development IKI fitness App Via Digisoft '
       + 'by coding the Welcoming and onboarding process screens '
@@ -103,70 +202,6 @@ const worksData = [
     year: 2023,
     liveVersion: 'https://appetize.io/app/awpaovb4cudkhrl4czi6ieby5u?device=pixel4&osVersion=11.0&scale=75',
     sourceLink: 'https://github.com/ProgramKingAbel',
-  },
-
-  {
-    id: 3,
-    Company: 'Space Travelers Hub',
-    description: 'Space Travelers'
-      + 'Hub is a web application for a company that provides '
-      + 'commercial and scientific space travel services. '
-      + 'The application will allow users to book rockets and join selected space missions.',
-    img: [
-      './images/rockets-ideal.png',
-      './images/st-missions.png',
-      './images/dragons-ideal.png',
-      './images/st-user-noreserve.png',
-      './images/st-user-selected.png',
-    ],
-    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Jest', 'React testing Library'],
-    devName: 'Abel Morara',
-    devRole: 'Full-Stack Dev',
-    year: 2023,
-    liveVersion: 'https://space-travellers-hub-app.onrender.com/',
-    sourceLink: 'https://github.com/ProgramKingAbel/space_travelers_hub',
-  },
-
-  {
-    id: 4,
-    Company: 'Stox App',
-    description: 'StoX is a web application for financial institutions'
-      + ' that pulls data of available stocks in the market'
-      + 'and provides analysis in trends of a particular stock'
-      + 'selected by user over a certain period of time e.g '
-      + '14days in a candlestick graph.',
-    img: [
-      './images/stox-1.png',
-      './images/stox-2.png',
-      './images/stox-3.png',
-    ],
-    technologies: ['HTML3', 'CSS5', 'Javascript', 'React', 'Redux', 'ApexChat.js', 'Jest', 'React testing Library'],
-    devName: 'Abel Morara',
-    devRole: 'Full-Stack Dev',
-    year: 2023,
-    liveVersion: 'https://stox-app.onrender.com/',
-    sourceLink: 'https://github.com/ProgramKingAbel/metrics-webapp',
-  },
-
-  {
-    id: 5,
-    Company: 'Bookstore CMS',
-    description: 'BookStore is a web App that allows you'
-      + 'to Display a list of books, Add a book, Remove'
-      + 'a selected book. This application, imitates the'
-      + 'use React and Redux in the context of a real application; '
-      + 'Data is received from, mutated and sent/ Preserved in the server through API call actions.',
-    img: [
-      './images/bookstoresnip.PNG',
-      './images/bookstore-2.png',
-      './images/bookstore-3.png',
-    ],
-    technologies: ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'RestAPI', 'Jest', 'React testing Library'],
-    devName: 'Abel Morara',
-    devRole: 'Full-Stack Dev',
-    year: 2023,
-    liveVersion: 'https://online-bookstore-erh5.onrender.com/',
-    sourceLink: 'https://github.com/ProgramKingAbel/bookstore',
   },
 
 ];
@@ -290,7 +325,7 @@ carousels.forEach((carousel) => {
   function startAutoScroll() {
     scrollIntervals.push(setInterval(() => {
       scrollCarousel(carousel);
-    }, 2200)); // Adjust scroll delay as needed
+    }, 1000)); // Adjust scroll delay as needed
   }
 
   // Start auto-scrolling for each carousel when the page loads
