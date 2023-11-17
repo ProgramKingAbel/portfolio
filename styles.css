@@ -371,54 +371,6 @@ a {
   /* margin-bottom: 1.2rem; */
 }
 
-.dynamic-txts {
-  height: 90px;
-  overflow: hidden;
-}
-
-.dynamic-txts ul {
-  flex-direction: column;
-}
-
-.dynamic-txts li {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-  color: #172b4d;
-  transition: 0.8s ease;
-  position: relative;
-  top: 0;
-  animation: slide 6s steps(4) infinite;
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-.dynamic-txts li span {
-  position: relative;
-}
-
-.dynamic-txts li span::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background: #fff;
-  border-left: 2px solid #6070ff;
-  animation: typing 1.5s steps(21) infinite;
-}
-
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}
-
 .developer-details > li:nth-child(1) {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -695,6 +647,54 @@ button[type="submit"] {
 /* Media query for desktop */
 
 @media only screen and (min-width: 768px) {
+  .dynamic-txts {
+    height: 90px;
+    overflow: hidden;
+  }
+
+  .dynamic-txts ul {
+    flex-direction: column;
+  }
+
+  .dynamic-txts li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #172b4d;
+    transition: 0.8s ease;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+
+  .dynamic-txts li span {
+    position: relative;
+  }
+
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    border-left: 2px solid #6070ff;
+    animation: typing 1.5s steps(21) infinite;
+  }
+
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+
   .hero {
     background-image: url("./images/Header-bg-desktop.svg");
     background-repeat: no-repeat;
