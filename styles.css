@@ -14,6 +14,9 @@ body {
 header {
   background-color: #fff;
   width: 100%;
+  position: fixed;
+  z-index: 9999;
+  
 }
 
 li {
@@ -134,7 +137,7 @@ a {
 }
 
 .hero {
-  position: absolute;
+  /* position: relative; */
   width: 100%;
   background-color: #fff;
   background-image: url("./images/header-shapes\ mobile@2x.svg");
@@ -144,11 +147,9 @@ a {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper {
-  width: 80%;
-  margin: 7rem auto 0;
-  padding-bottom: 7rem;
-}
+/* .wrapper {
+  position: relative;
+} */
 
 .wrapper h1,
 .about-heading,
@@ -606,9 +607,9 @@ button[type="submit"] {
     background-size: cover;
   }
 
-  .wrapper {
+  /* .wrapper {
     width: 70%;
-  }
+  } */
 
   .wrapper p {
     max-width: 98%;
