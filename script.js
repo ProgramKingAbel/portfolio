@@ -90,8 +90,8 @@ const worksData = [
   {
     id: 2,
     Company: 'JA CONFERENCE WEBSITE',
-    description: 'Junior Achievement Kenya is an organization that'
-      + 'seeks to narture local young talents with enterprenurial mind.'
+    description: 'Junior Achievement Kenya is an organization that '
+      + 'seeks to narture local young talents with enterprenurial mind. '
               + 'This website gives information about their current state of events, '
       + 'conferences and a general view of their organization.',
 
@@ -159,10 +159,10 @@ const worksData = [
     id: 6,
     Company: 'Bookstore CMS',
     description: 'BookStore is a web App that allows you'
-      + 'to Display a list of books, Add a book, Remove'
-      + 'a selected book. This application, imitates the'
-      + 'use React and Redux in the context of a real application; '
-      + 'Data is received from, mutated and sent/ Preserved in the server through API call actions.',
+      + 'to display a list of books, add a book, remove'
+      + 'a selected book. This application, utilizes the'
+      + 'power of React and Redux. '
+      + 'Data is received from, mutated and sent/ preserved in the server through API call actions.',
     img: [
       './images/bookstoresnip.PNG',
       './images/bookstore-2.png',
@@ -179,8 +179,8 @@ const worksData = [
     id: 3,
     Company: 'IKI FITNESS APP',
     description: 'Proud to have taken part in development IKI fitness App Via Digisoft '
-      + 'by coding the Welcoming and onboarding process screens '
-      + 'You can checkout the preinstalled version of app in an online simulator on '
+      + 'by coding the welcoming and onboarding process screens '
+      + 'You can checkout the preinstalled version of app in an online simulator on the '
       + 'See Live demo button below.'
       + ' Enjoy the smooth user experience and let me know if you liked it. '
       + 'Home > Get Started > Already have an account > Login ',
