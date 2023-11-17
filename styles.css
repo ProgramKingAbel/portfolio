@@ -16,7 +16,6 @@ header {
   width: 100%;
   position: fixed;
   z-index: 9999;
-  
 }
 
 li {
@@ -65,106 +64,56 @@ a {
   display: none;
 }
 
-.dynamic-txts {
-  height: 90px;
-  overflow: hidden;
-}
-
-.dynamic-txts ul {
-  flex-direction: column;
-}
-
-.dynamic-txts li {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-  color: #172b4d;
-  transition: 0.8s ease;
-  position: relative;
-  top: 0;
-  animation: slide 6s steps(4) infinite;
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }  
-}
-
-.dynamic-txts li span {
-  position: relative;
-}
-
-.dynamic-txts li span::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background: #fff;
-  border-left: 2px solid #6070ff;
-  animation: typing 1.5s steps(21) infinite;
-}
-
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }  
-}
-
 /* media query for nav mobile versin */
 
 @media only screen and (max-width: 768px) {
+  .dynamic-txts {
+    height: 40px;
+    overflow: hidden;
+  }
 
+  .dynamic-txts ul {
+    flex-direction: column;
+  }
 
-.dynamic-txts {
-  height: 40px;
-  overflow: hidden;
-}
+  .dynamic-txts li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #172b4d;
+    transition: 0.8s ease;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+  }
 
-.dynamic-txts ul {
-  flex-direction: column;
-}
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
 
-.dynamic-txts li {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #172b4d;
-  transition: 0.8s ease;
-  position: relative;
-  top: 0;
-  animation: slide 6s steps(4) infinite;
-}
+  .dynamic-txts li span {
+    position: relative;
+  }
 
-@keyframes slide {
-  100% {
-    top: -360px;
-  }  
-}
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    border-left: 2px solid #6070ff;
+    animation: typing 1.5s steps(20) infinite;
+  }
 
-.dynamic-txts li span {
-  position: relative;
-}
-
-.dynamic-txts li span::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background: #fff;
-  border-left: 2px solid #6070ff;
-  animation: typing 1.5s steps(20) infinite;
-}
-
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }  
-}
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
 
   .hamburger {
     display: block;
@@ -394,19 +343,19 @@ a {
   padding: 0.5rem 0;
 }
 
-.developer-details span {
-  width: 0.5rem;
-  aspect-ratio: 1;
-  background-color: #c1c7d0;
-  border-radius: 50%;
-}
-
 .developer-details li {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.7rem;
   line-height: 1rem;
   color: #7a869a;
+}
+
+.developer-details span {
+  width: 0.5rem;
+  aspect-ratio: 1;
+  background-color: #c1c7d0;
+  border-radius: 50%;
 }
 
 .stack li {
@@ -420,6 +369,54 @@ a {
   padding: 4px 12px;
 
   /* margin-bottom: 1.2rem; */
+}
+
+.dynamic-txts {
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts ul {
+  flex-direction: column;
+}
+
+.dynamic-txts li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #172b4d;
+  transition: 0.8s ease;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: #fff;
+  border-left: 2px solid #6070ff;
+  animation: typing 1.5s steps(21) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
 }
 
 .developer-details > li:nth-child(1) {
@@ -485,6 +482,7 @@ a {
   border: 1px solid #fff;
   color: #fff;
 }
+
 
 /* ABOUT SECTION STYLING */
 .about {
@@ -595,7 +593,6 @@ button[type="submit"] {
   background-image: url('./images/contact-form.png');
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .contact-wrapper {
@@ -604,7 +601,6 @@ button[type="submit"] {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
 }
 
 .contact-header {
@@ -790,5 +786,4 @@ button[type="submit"] {
   button[type="submit"] {
     align-self: center;
   }
-
 }
