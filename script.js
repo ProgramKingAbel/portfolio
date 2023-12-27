@@ -175,35 +175,6 @@ const worksData = [
     liveVersion: 'https://online-bookstore-erh5.onrender.com/',
     sourceLink: 'https://github.com/ProgramKingAbel/bookstore',
   },
-  {
-    id: 3,
-    Company: 'IKI FITNESS APP',
-    description: 'Proud to have taken part in development IKI fitness App Via Digisoft '
-      + 'by coding the welcoming and onboarding process screens '
-      + 'You can checkout the preinstalled version of app in an online simulator on the '
-      + 'See Live demo button below.'
-      + ' Enjoy the smooth user experience and let me know if you liked it. '
-      + 'Home > Get Started > Already have an account > Login ',
-
-    img: [
-      './images/iki1.png',
-      './images/iki00.png',
-      './images/iki2.png',
-      './images/iki6.png',
-      './images/iki8.png',
-      './images/iki9.png',
-      './images/iki3.png',
-      './images/iki4.png',
-      './images/iki5.png',
-    ],
-    technologies: ['Android', 'React Native', 'expo'],
-    devName: 'Abel Morara',
-    devRole: 'Frontend dev',
-    year: 2023,
-    liveVersion: 'https://appetize.io/app/awpaovb4cudkhrl4czi6ieby5u?device=pixel4&osVersion=11.0&scale=75',
-    sourceLink: 'https://github.com/ProgramKingAbel',
-  },
-
 ];
 
 worksData.forEach((element, i) => {
